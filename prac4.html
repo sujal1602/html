@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height,width, border , background</title>
+    <style>
+        .container
+        {
+            background-color: rgb(111 194 235);
+            border: 3px solid rgb(202 161 161);
+            height: 100px;
+            margin: 16px;
+            padding: 30px;
+            font-style: italic;
+            /* box-sizing: border-box; */
+        }
+
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+   <h3>Content-box</h3>
+   <p > This is the default value of the box-sizing property. In this mode, the width and height properties include only the content. Border and padding are not included in it i.e if we set an element’s width to 200 pixels, then the element’s content box will be 200 pixels wide, and the width of any border or padding will be added to the final rendered width.
+   </p> </div>
+   <div class="container">
+   <h3> Border-box</h3>
+   <p> In this mode, the width and height properties include content, padding, and borders i.e if we set an element’s width to 200 pixels, that 200 pixels will include any border or padding we added, and the content box will shrink to absorb that extra width. This typically makes it much easier to size elements.</p>
+  </div>
+  <div class="container">
+   <h3>Syntax</h3>
+  <p> box-sizing: border-box;
+      box-sizing: content-box;
+</p>
+
+</div>
+</body>
+</html>
